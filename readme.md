@@ -3,9 +3,7 @@
 
 ## API
 ---
-
 ### props
-
 属性|说明|类型|默认值
 |:--|:--|:--|:--|
 show-head|是否显示表头|Boolean|true
@@ -20,7 +18,6 @@ cell-style|行的class的回调方法,传入参数:<br>  row : 当前行数据 <
 :color-map|当第一列展示type为icon时候,传递的颜色数据<br> {circle:true,color:'#3282FF'}<br>其中circle为true则显示圆形icon|Array|随机颜色
 
 ### columns
-
 属性|说明|类型|默认值
 |:-|:-|:-|:-|
 title|列头显示的文字|String|-
@@ -31,6 +28,27 @@ width|列宽度|String|-
 sortable|该列是否启用排序|Boolean|false
 ellipsis|是否启用超出隐藏...|Boolean|false
 type|`{type: 'index',width: '20px'}`可选index icon 此处设置需放在columns第一个|String|index
+
+### slot
+```
+ <z-thead>
+        <tr>
+          <th>#</th>
+          <th>d</th>
+          <th>不涨价</th>
+          <th>涨价</th>
+        </tr>
+    </z-thead>
+
+     <z-tfoot>
+        <tr>
+          <td>合计</td>
+          <td>d</td>
+          <td>dd</td>
+          <td>ddd</td>
+        </tr>
+    </z-tfoot>
+```
 
 
 
