@@ -1,11 +1,13 @@
 # z-table
 > 基于vue的简单table表格 实现了自定义任意行、单元格等样式 排序,自定义thead tfoot等功能
 
-##API
+## API
 ---
-###props
+
+### props
+
 属性|说明|类型|默认值
-:--|:--|:--|:--
+|:--|:--|:--|:--|
 show-head|是否显示表头|Boolean|true
 border-x|是否显示横向边框|Boolean|true
 border-y|是否显示纵向边框|Boolean|false
@@ -17,9 +19,10 @@ row-style|行的class的回调方法,传入参数:<br>  row : 当前行数据 <b
 cell-style|行的class的回调方法,传入参数:<br>  row : 当前行数据 <br>index : 当前列索引 |Function|-
 :color-map|当第一列展示type为icon时候,传递的颜色数据<br> {circle:true,color:'#3282FF'}<br>其中circle为true则显示圆形icon|Array|随机颜色
 
-##columns
+### columns
+
 属性|说明|类型|默认值
-:-|:-|:-|:-
+|:-|:-|:-|:-|
 title|列头显示的文字|String|-
 key|对应data里列内容的字段名|String|-
 align|对齐方式,可选值为left right center |String|center
