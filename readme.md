@@ -1,6 +1,12 @@
 # z-table
 > 基于vue的简单table表格 实现了自定义任意行、单元格等样式 排序,自定义thead tfoot等功能
 
+## 引入示例
+``` 
+import ztable from '@/components/ztable/z-table';
+Vue.use(ztable) 
+```
+
 ## API
 ---
 ### props
